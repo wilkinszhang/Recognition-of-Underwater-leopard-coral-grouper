@@ -1,0 +1,104 @@
+
+                   from  n    params  module                                       arguments                     
+  0                  -1  1       464  ultralytics.nn.modules.conv.Conv             [3, 16, 3, 2]                 
+  1                  -1  1      4672  ultralytics.nn.modules.conv.Conv             [16, 32, 3, 2]                
+  2                  -1  1      7360  ultralytics.nn.modules.block.C2f             [32, 32, 1, True]             
+  3                  -1  1     18560  ultralytics.nn.modules.conv.Conv             [32, 64, 3, 2]                
+  4                  -1  2     49664  ultralytics.nn.modules.block.C2f             [64, 64, 2, True]             
+  5                  -1  1     73984  ultralytics.nn.modules.conv.Conv             [64, 128, 3, 2]               
+  6                  -1  2    197632  ultralytics.nn.modules.block.C2f             [128, 128, 2, True]           
+  7                  -1  1    295424  ultralytics.nn.modules.conv.Conv             [128, 256, 3, 2]              
+  8                  -1  1    460288  ultralytics.nn.modules.block.C2f             [256, 256, 1, True]           
+  9                  -1  1   1639680  ultralytics.nn.modules.GAM_Attention.GAM_Attention[256, 256]                    
+ 10                  -1  1    164608  ultralytics.nn.modules.block.SPPF            [256, 256, 5]                 
+ 11                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']          
+ 12             [-1, 6]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 13                  -1  1    148224  ultralytics.nn.modules.block.C2f             [384, 128, 1]                 
+ 14                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']          
+ 15             [-1, 4]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 16                  -1  1     37248  ultralytics.nn.modules.block.C2f             [192, 64, 1]                  
+ 17                  -1  1     36992  ultralytics.nn.modules.conv.Conv             [64, 64, 3, 2]                
+ 18            [-1, 12]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 19                  -1  1    156416  ultralytics.nn.modules.block.C2f             [448, 128, 1]                 
+ 20                  -1  1    147712  ultralytics.nn.modules.conv.Conv             [128, 128, 3, 2]              
+ 21             [-1, 9]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 22                  -1  1    493056  ultralytics.nn.modules.block.C2f             [384, 256, 1]                 
+ 23        [15, 18, 21]  1   3527104  ultralytics.nn.modules.head.Detect           [80, [192, 448, 384]]         
+YOLOv8n-addatt summary: 236 layers, 7459088 parameters, 7459072 gradients
+
+New https://pypi.org/project/ultralytics/8.0.117 available 😃 Update with 'pip install -U ultralytics'
+Ultralytics YOLOv8.0.110 🚀 Python-3.8.16 torch-1.12.1+cu102 CUDA:0 (Tesla T4, 15110MiB)
+WARNING ⚠️ Upgrade to torch>=2.0.0 for deterministic training.
+[34m[1myolo/engine/trainer: [0mtask=detect, mode=train, model=yolov8n-addatt.yaml, data=/home/whut4/zwj/0426underwater/dataset2_copy_2/data.yaml, epochs=20, patience=50, batch=64, imgsz=640, save=True, save_period=-1, cache=False, device=None, workers=8, project=None, name=cfg, exist_ok=False, pretrained=False, optimizer=SGD, verbose=True, seed=0, deterministic=True, single_cls=False, rect=False, cos_lr=False, close_mosaic=0, resume=False, amp=True, fraction=1.0, profile=False, overlap_mask=True, mask_ratio=4, dropout=0.0, val=True, split=val, save_json=False, save_hybrid=False, conf=None, iou=0.7, max_det=300, half=False, dnn=False, plots=True, source=None, show=False, save_txt=False, save_conf=False, save_crop=False, show_labels=True, show_conf=True, vid_stride=1, line_width=None, visualize=False, augment=False, agnostic_nms=False, classes=None, retina_masks=False, boxes=True, format=torchscript, keras=False, optimize=False, int8=False, dynamic=False, simplify=False, opset=None, workspace=4, nms=False, lr0=0.01, lrf=0.01, momentum=0.937, weight_decay=0.0005, warmup_epochs=3.0, warmup_momentum=0.8, warmup_bias_lr=0.1, box=7.5, cls=0.5, dfl=1.5, pose=12.0, kobj=1.0, label_smoothing=0.0, nbs=64, hsv_h=0.015, hsv_s=0.7, hsv_v=0.4, degrees=0.0, translate=0.1, scale=0.5, shear=0.0, perspective=0.0, flipud=0.0, fliplr=0.5, mosaic=1.0, mixup=0.0, copy_paste=0.0, cfg=None, v5loader=False, tracker=botsort.yaml, save_dir=runs/detect/cfg5
+Overriding model.yaml nc=80 with nc=31
+
+                   from  n    params  module                                       arguments                     
+  0                  -1  1       464  ultralytics.nn.modules.conv.Conv             [3, 16, 3, 2]                 
+  1                  -1  1      4672  ultralytics.nn.modules.conv.Conv             [16, 32, 3, 2]                
+  2                  -1  1      7360  ultralytics.nn.modules.block.C2f             [32, 32, 1, True]             
+  3                  -1  1     18560  ultralytics.nn.modules.conv.Conv             [32, 64, 3, 2]                
+  4                  -1  2     49664  ultralytics.nn.modules.block.C2f             [64, 64, 2, True]             
+  5                  -1  1     73984  ultralytics.nn.modules.conv.Conv             [64, 128, 3, 2]               
+  6                  -1  2    197632  ultralytics.nn.modules.block.C2f             [128, 128, 2, True]           
+  7                  -1  1    295424  ultralytics.nn.modules.conv.Conv             [128, 256, 3, 2]              
+  8                  -1  1    460288  ultralytics.nn.modules.block.C2f             [256, 256, 1, True]           
+  9                  -1  1   1639680  ultralytics.nn.modules.GAM_Attention.GAM_Attention[256, 256]                    
+ 10                  -1  1    164608  ultralytics.nn.modules.block.SPPF            [256, 256, 5]                 
+ 11                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']          
+ 12             [-1, 6]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 13                  -1  1    148224  ultralytics.nn.modules.block.C2f             [384, 128, 1]                 
+ 14                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']          
+ 15             [-1, 4]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 16                  -1  1     37248  ultralytics.nn.modules.block.C2f             [192, 64, 1]                  
+ 17                  -1  1     36992  ultralytics.nn.modules.conv.Conv             [64, 64, 3, 2]                
+ 18            [-1, 12]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 19                  -1  1    156416  ultralytics.nn.modules.block.C2f             [448, 128, 1]                 
+ 20                  -1  1    147712  ultralytics.nn.modules.conv.Conv             [128, 128, 3, 2]              
+ 21             [-1, 9]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 22                  -1  1    493056  ultralytics.nn.modules.block.C2f             [384, 256, 1]                 
+ 23        [15, 18, 21]  1   3498733  ultralytics.nn.modules.head.Detect           [31, [192, 448, 384]]         
+YOLOv8n-addatt summary: 236 layers, 7430717 parameters, 7430701 gradients
+
+[34m[1mAMP: [0mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+[34m[1mAMP: [0mchecks passed ✅
+[34m[1moptimizer:[0m SGD(lr=0.01) with parameter groups 59 weight(decay=0.0), 68 weight(decay=0.0005), 69 bias
+[34m[1mtrain: [0mScanning /home/whut4/zwj/0426underwater/dataset2_copy_2/train/labels.cache... 4846 images, 24 backgrounds, 0 corrupt: 100%|██████████| 4846/4846 [00:00<?, ?it/s][34m[1mtrain: [0mScanning /home/whut4/zwj/0426underwater/dataset2_copy_2/train/labels.cache... 4846 images, 24 backgrounds, 0 corrupt: 100%|██████████| 4846/4846 [00:00<?, ?it/s]
+[34m[1mval: [0mScanning /home/whut4/zwj/0426underwater/dataset2_copy_2/valid/labels.cache... 605 images, 5 backgrounds, 0 corrupt: 100%|██████████| 605/605 [00:00<?, ?it/s][34m[1mval: [0mScanning /home/whut4/zwj/0426underwater/dataset2_copy_2/valid/labels.cache... 605 images, 5 backgrounds, 0 corrupt: 100%|██████████| 605/605 [00:00<?, ?it/s]
+Plotting labels to runs/detect/cfg5/labels.jpg... 
+Image sizes 640 train, 640 val
+Using 8 dataloader workers
+Logging results to [1mruns/detect/cfg5[0m
+Starting training for 20 epochs...
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+  0%|          | 0/76 [00:00<?, ?it/s]  0%|          | 0/76 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "mytrain.py", line 7, in <module>
+    results = model.train(data="/home/whut4/zwj/0426underwater/dataset2_copy_2/data.yaml", epochs=20, batch=64, workers=8, close_mosaic=0, name='cfg')  # 训练模型
+  File "/home/whut4/zwj/ultralytics/ultralytics/yolo/engine/model.py", line 371, in train
+    self.trainer.train()
+  File "/home/whut4/zwj/ultralytics/ultralytics/yolo/engine/trainer.py", line 192, in train
+    self._do_train(world_size)
+  File "/home/whut4/zwj/ultralytics/ultralytics/yolo/engine/trainer.py", line 328, in _do_train
+    preds = self.model(batch['img'])
+  File "/home/whut4/anaconda3/envs/yolov8add_att/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/whut4/zwj/ultralytics/ultralytics/nn/tasks.py", line 215, in forward
+    return self._forward_once(x, profile, visualize)  # single-scale inference, train
+  File "/home/whut4/zwj/ultralytics/ultralytics/nn/tasks.py", line 64, in _forward_once
+    x = m(x)  # run
+  File "/home/whut4/anaconda3/envs/yolov8add_att/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/whut4/zwj/ultralytics/ultralytics/nn/modules/block.py", line 181, in forward
+    y = list(self.cv1(x).chunk(2, 1))
+  File "/home/whut4/anaconda3/envs/yolov8add_att/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/whut4/zwj/ultralytics/ultralytics/nn/modules/conv.py", line 39, in forward
+    return self.act(self.bn(self.conv(x)))
+  File "/home/whut4/anaconda3/envs/yolov8add_att/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/whut4/anaconda3/envs/yolov8add_att/lib/python3.8/site-packages/torch/nn/modules/activation.py", line 391, in forward
+    return F.silu(input, inplace=self.inplace)
+  File "/home/whut4/anaconda3/envs/yolov8add_att/lib/python3.8/site-packages/torch/nn/functional.py", line 2047, in silu
+    return torch._C._nn.silu_(input)
+RuntimeError: CUDA out of memory. Tried to allocate 50.00 MiB (GPU 0; 14.76 GiB total capacity; 2.59 GiB already allocated; 12.44 MiB free; 2.65 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
