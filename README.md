@@ -44,6 +44,22 @@ To test the model, run the following command:
 python mypredict.py
 ```
 
+## Example
+
+Here is an example of how to use the PLGAT model for underwater Plectropomus leopardus recognition:
+
+```python
+from ultralytics import YOLO
+
+# Load a model
+model = YOLO('/home/whut4/zwj/ultralytics/runs/detect/GAM-Enhanced/weights/best.pt')  # load a custom model
+
+# Validate the model
+metrics = model.predict(source='/home/whut4/zwj/0426underwater/dataset2 copy 8/test/images/VID_20230414_150420-0003.jpg',save=True,save_txt=True,save_conf=True,name='example')  # no arguments needed, dataset and settings remembered
+
+```
+![Example Image](images/example.jpg)
+![Predict Image](images/predict.jpg)
 ## Contribution Guidelines
 
 Thank you for considering contributing to our project! We welcome any contributions that can help improve the project and make it better. To ensure a smooth collaboration, please follow the guidelines below.
